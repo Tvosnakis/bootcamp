@@ -5,106 +5,171 @@
         --azul-dnc: #0C70F2;
         --PRETO-DNC: #303030;
         --cinza-hover: #c9c9c9;
-    
         --fonte-padrao: 'Inter';
             
 }
 
+    body{
+        margin: 0px; /* Margem Externa */
+        padding: 0px; /* Margem Externa */
+        
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+        background-repeat: no-repeat;
+    }
 
-
-body{
-    margin: 0px; /* Margem Externa */
-    padding: 0px; /* Margem Externa */
-    
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
-    background-repeat: no-repeat;
-}
-
-#UpperNav{
-    width: 100%;
-    height: 100px;
-    border: 1px solid black;
-    background-color: var(--PRETO-DNC);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #bababa;
-}
-
-    #menu{
+    #UpperNav{
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+        background-color: var(--PRETO-DNC);
         display: flex;
-        width: 45%;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-
-        margin-left: 5%;
+        border-bottom: 1px solid #bababa;
     }
 
-    #UpperNav div a{
-        font-family: var(--fonte-padrao);
-        font-size: 25px;
-        font-weight: 600;
-        color: white;
-        text-decoration: none;
-    }
+        #menu{
+            display: flex;
+            width: 45%;
+            justify-content: space-around;
+            align-items: center;
 
-    #UpperNav div a:hover{
-        color: var(--cinza-hover);
+            margin-left: 5%;
+        }
+
+        #UpperNav div a{
+            font-family: var(--fonte-padrao);
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        #UpperNav div a:hover{
+            color: var(--cinza-hover);
+            
+        }
+
+        #UpperNav button{
+            margin-right: 5%;
+            background-color: var(--azul-dnc);
+            border: 0px;
+            border-radius: 10px;
+            height: 40px;
+            width:80px;
+            
+            font-family: var(--fonte-padrao);
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+
+            box-shadow: 3px 2px 4px 0px #0C70F240;
+            cursor: pointer;
         
-    }
+        }
 
-    #UpperNav button{
-        margin-right: 5%;
-        background-color: var(--azul-dnc);
-        border: 0px;
+        /* Seção Principal do Site */
 
-        height: 40px;
-        width:80px;
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            margin-top: 100px;
+            margin-bottom: 100px;
         
-        font-family: var(--fonte-padrao);
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
+        }
 
-        box-shadow: 3px 2px 4px 0px #0C70F240;
-        cursor: pointer;
-    
-    }
+        header{
+            color: white;
+            font-family: var(--fonte-padrao);
+            
+        }
 
-    /* Seção Principal do Site */
+        header h1{
+            font-size: 80px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-align: center;    
+        }
 
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        margin-top: 100px;
-        margin-bottom: 100px;
-    
-    }
+        header h2{
+            text-align: center;
+            font-size:40px;
+            font-weight: 700;
+            margin-bottom: 100px;
+            line-height: 150%;
+        }
 
-    header{
-        color: white;
-        font-family: var(--fonte-padrao);
-        
-    }
+            header .realce{
+                background-color: black;
+                font-weight: bold;
+                padding: 5px;
+            }
 
-    header h1{
-        font-size: 80px;
-        font-weight: 800;
-        margin-bottom: 30px;
-        text-align: center;    
-    }
+            /*formulário*/
 
-    header h2{
-        text-align: center;
-        font-size:40px;
-        font-weight: 700;
-        margin-bottom: 100px;
-    }
+            form{ 
+                font-family: 'inter';
+                color: rgba(255, 255, 255, 1);
+                font-size: 30px;
+                font-weight: 600;
+                width: 600px;
+                
+            }
 
-    header .realce{
-        background-color: black;
-        font-weight: bold;
-        
-    }
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+            }
+
+            form input{
+                border-radius: 10px;
+                height: 30px;
+                border: 0px;
+                font-size: 20px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.9);                ;
+                
+            }
+
+            form label{
+                margin: 10px 0px 10px 0px;
+
+            }
+
+            form input::placeholder{
+                color: rgba(57, 57, 57, 0.5);
+                        
+            }
+
+            .checkbox-itens label{
+                font-size: 25px;
+                                
+            }
+
+            .checkbox-itens{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+             
+            }
+
+            input[type="checkbox"]{
+                transform: scale(2);
+            }
+
+            input[type="submit"]{
+                background-color: rgba(12, 112, 242, 0.9);
+                width: 100%;
+                height: 50px;
+                font-size: 25px;
+                font-weight: 600;
+                color: white;
+                margin-top: 50px;
+                box-shadow: 0px 3px 4px 0px rgba(12, 112, 242, 0.25);
+                cursor:pointer;
+            }
