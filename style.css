@@ -146,20 +146,21 @@
                         
             }
 
+
             .checkbox-itens label{
-                font-size: 25px;
+                font-size: 23px;
                                 
             }
 
             .checkbox-itens{
-                display: flex;
-                justify-content: space-around;
+                display: grid;
+                grid-auto-flow: column;
                 align-items: center;
              
             }
 
             input[type="checkbox"]{
-                transform: scale(2);
+                transform: scale(0.7);
             }
 
             input[type="submit"]{
@@ -173,3 +174,4 @@
                 box-shadow: 0px 3px 4px 0px rgba(12, 112, 242, 0.25);
                 cursor:pointer;
             }
+            
