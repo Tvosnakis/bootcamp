@@ -315,5 +315,14 @@
         font-size: 15px;
         
     }
+
+    footer .linha1{
+        flex-direction: column;
+    }
+
+    footer .endereço{
+        width: 95%;
+        margin-bottom: 20px;
+    }
 }
 
